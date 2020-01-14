@@ -1,0 +1,28 @@
+[
+  {
+    "model": "api.questionnaire",
+    "pk": 1,
+    "fields": {
+      "name": "Hoe groen is uw bedrijf?",
+      "description": "De test om te kijken hoe groen uw bedrijf echt is",
+      "status": "public"
+    }
+  },
+  {
+    "model": "api.question",
+    "pk": 1,
+    "fields": {
+      "question": "Hoeveel zonnenpanelen heeft uw bedrijf?",
+      "type": "number"
+    }
+  },
+  {
+    "model": "api.questionlink",
+    "pk": 3,
+    "fields": {
+      "question_key": "zonnenpanelen_amount",
+      "question": 1,
+      "questionnaire": 1
+    }
+  }
+]
