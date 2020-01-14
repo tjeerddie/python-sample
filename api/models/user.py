@@ -9,6 +9,3 @@ class User(AbstractUser, models.Model):
     last_name_prefix = models.CharField(max_length=50, blank=True)
     last_name = models.CharField(max_length=50)
     registered_on = models.DateTimeField(default=now, editable=False)
-    company = models.ForeignKey(
-        'Company', related_name="users", on_delete=models.PROTECT
-    )
