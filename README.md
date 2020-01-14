@@ -14,7 +14,7 @@ If you are using mysql as your database:
 start the server: `python manage.py runserver`
 
 ## API routes
-- `localhost:8000` - shows main resources.
+- `http://localhost:8000` - shows main resources.
 - `http://localhost:8000/users` - user resource.
 - `http://localhost:8000/questionnaires` - questionnaire resource.
 - `http://localhost:8000/questionnaires/1/questions` - question subresource of questionnaire resource.
